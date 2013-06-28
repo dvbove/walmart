@@ -1,0 +1,10 @@
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Business.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Business.pdb
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Data.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Model.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Data.pdb
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Model.pdb
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\obj\Debug\Walmart.Prova.Business.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\obj\Debug\Walmart.Prova.Business.pdb
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\obj\Debug\Walmart.Prova.Site.Business.csprojResolveAssemblyReference.cache
+D:\Samples\Walmart.Prova\Walmart.Prova.Business\bin\Debug\Walmart.Prova.Business.dll.config

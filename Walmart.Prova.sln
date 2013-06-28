@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.Web", "Walmart.Prova.Web\Walmart.Prova.Web.csproj", "{13B9E6CC-3092-4B12-8099-554100CED443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.Data", "Walmart.Prova.Data\Walmart.Prova.Data.csproj", "{9727CDFE-30F0-4AF5-8D3A-106A1ED546A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.Site.Business", "Walmart.Prova.Business\Walmart.Prova.Site.Business.csproj", "{CFA2FAC5-2BF4-4636-802A-3D02371619C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C336A533-8BBA-4A39-8D6C-2919976473F4} = {C336A533-8BBA-4A39-8D6C-2919976473F4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.Model", "Walmart.Prova.Model\Walmart.Prova.Model.csproj", "{766AD6B3-F4E7-40CB-8195-CC70557C28C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.Service.Business", "Walmart.Prova.Service.Business\Walmart.Prova.Service.Business.csproj", "{D1AF27EA-0D57-46D6-AA00-CA45B43A0731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Walmart.Prova.WebService", "Walmart.Prova.WebService\Walmart.Prova.WebService.csproj", "{C336A533-8BBA-4A39-8D6C-2919976473F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13B9E6CC-3092-4B12-8099-554100CED443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B9E6CC-3092-4B12-8099-554100CED443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B9E6CC-3092-4B12-8099-554100CED443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B9E6CC-3092-4B12-8099-554100CED443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9727CDFE-30F0-4AF5-8D3A-106A1ED546A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9727CDFE-30F0-4AF5-8D3A-106A1ED546A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9727CDFE-30F0-4AF5-8D3A-106A1ED546A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9727CDFE-30F0-4AF5-8D3A-106A1ED546A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA2FAC5-2BF4-4636-802A-3D02371619C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA2FAC5-2BF4-4636-802A-3D02371619C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA2FAC5-2BF4-4636-802A-3D02371619C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA2FAC5-2BF4-4636-802A-3D02371619C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766AD6B3-F4E7-40CB-8195-CC70557C28C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766AD6B3-F4E7-40CB-8195-CC70557C28C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766AD6B3-F4E7-40CB-8195-CC70557C28C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766AD6B3-F4E7-40CB-8195-CC70557C28C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AF27EA-0D57-46D6-AA00-CA45B43A0731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AF27EA-0D57-46D6-AA00-CA45B43A0731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AF27EA-0D57-46D6-AA00-CA45B43A0731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AF27EA-0D57-46D6-AA00-CA45B43A0731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C336A533-8BBA-4A39-8D6C-2919976473F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C336A533-8BBA-4A39-8D6C-2919976473F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C336A533-8BBA-4A39-8D6C-2919976473F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C336A533-8BBA-4A39-8D6C-2919976473F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

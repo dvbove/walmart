@@ -1,0 +1,61 @@
+/****** Object:  Table [dbo].[Estado]    Script Date: 06/27/2013 22:53:14 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Estado](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Pais] [varchar](50) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[Sigla] [varchar](2) NOT NULL,
+	[Regiao] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_Estado] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+/****** Object:  Table [dbo].[Cidade]    Script Date: 06/27/2013 22:52:58 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Cidade](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdEstado] [int] NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[Capital] [bit] NOT NULL,
+ CONSTRAINT [PK_Cidade] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[Cidade]  WITH CHECK ADD  CONSTRAINT [FK_Cidade_Estado] FOREIGN KEY([IdEstado])
+REFERENCES [dbo].[Estado] ([Id])
+GO
+
+ALTER TABLE [dbo].[Cidade] CHECK CONSTRAINT [FK_Cidade_Estado]
+GO
+

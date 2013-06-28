@@ -1,0 +1,4 @@
+D:\Samples\Walmart.Prova\Walmart.Prova.Model\bin\Debug\Walmart.Prova.Model.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Model\bin\Debug\Walmart.Prova.Model.pdb
+D:\Samples\Walmart.Prova\Walmart.Prova.Model\obj\Debug\Walmart.Prova.Model.dll
+D:\Samples\Walmart.Prova\Walmart.Prova.Model\obj\Debug\Walmart.Prova.Model.pdb

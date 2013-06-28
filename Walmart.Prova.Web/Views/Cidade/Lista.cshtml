@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Walmart.Prova.Model.Cidade>
+@{
+    ViewBag.Title = "Cidade";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    Cidade</h2>
+<p>
+    @Html.ActionLink("Novo", "Novo")
+</p>
+<table>
+    <tr>
+        <th>
+            Codigo
+        </th>
+        <th>
+            Estado
+        </th>
+        <th>
+            Nome
+        </th>
+        <th>
+            Capital
+        </th>
+        <th>
+        </th>
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td colspan="4">
+                Nenhum registro encontrado
+            </td>
+        </tr>  
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capital)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.Codigo }) |
+                @Html.ActionLink("Excluir", "Excluir", "Cidade", new { id = item.Codigo }, new { id = "delete" })
+            </td>
+        </tr>
+        }
+    }
+</table>
+<script type="text/javascript">
+    $(function () {
+        $('#delete').click(function () {
+            if (confirm('Excluír o registro selecionado?')) {
+                $.post(this.href, {}, function (result) {
+                    alert("Registro excluído.");
+                });
+
+                $(this).parent().parent().remove();
+                
+            }
+            return false;
+        });
+    });
+</script>
